@@ -65,7 +65,7 @@
 				
 				
 				.preamble{display:grid;grid-template-columns:auto 1fr;max-width:100%;padding:1rem}
-				.preamble__guild-icon-container{grid-column:1}
+				.preamble__guild-icon-container{grid-column:1;cursor: pointer}
 				.preamble__guild-icon{max-width:88px;max-height:88px}
 				.preamble__entries-container{grid-column:2;margin-left:1rem}
 				.preamble__entry{margin-bottom:0.15rem;color:#ffffff;font-size:1.4rem}
@@ -402,11 +402,11 @@
 
         }
     </script>
-    <body>
-        <div class=preamble>
-            <div class=preamble__guild-icon-container><img class=preamble__guild-icon src="https://cdn.discordapp.com/icons/1101585803097944074/a_7d54921ee53648741bc0eee6196de001.gif?size=512" alt="PWNED SERVICES LOGO" loading=lazy></div>
-            <div class=preamble__entries-container>
-                <div class=preamble__entry> Pwned Services </div>
+<body>
+    <div class="preamble__guild-icon-container" onclick="openLink()">
+        <img class="preamble__guild-icon" src="https://cdn.discordapp.com/icons/1101585803097944074/a_7d54921ee53648741bc0eee6196de001.gif?size=512" alt="PWNED SERVICES LOGO" loading="lazy">
+    </div>
+    <div class="preamble__entry">Pwned Services</div>
                 <div class=preamble__entry> / Steam Shop </div>
             </div>
         </div>
